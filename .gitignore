@@ -1,2 +1,5 @@
 # pycharm files
 .idea/
+
+# cache
+*.pyc
