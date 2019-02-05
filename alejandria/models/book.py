@@ -10,6 +10,8 @@ class Book:
         self.publication_date = publication_date
         self.publisher = publisher
         self.description = description
+        self.authors = []
+        self.categories = []
 
     def save(self):
         self._instances[self.id] = self
@@ -19,3 +21,8 @@ class Book:
     def get_by_id(cls, id):
         return cls._instances.get(id)
 
+    def add_author(self, author):
+        self.authors.append(author)
+
+    def add_category(self, category):
+        self.categories.append(category)

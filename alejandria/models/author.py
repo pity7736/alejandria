@@ -7,6 +7,9 @@ class Author:
         self.id = id
         self.name = name
 
+    def __str__(self):
+        return f'{self.id} - {self.name}'
+
     def save(self):
         self._instances[self.id] = self
         return True
