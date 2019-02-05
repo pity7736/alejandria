@@ -14,3 +14,7 @@ class Author:
     @classmethod
     def get_by_id(cls, id):
         return cls._instances.get(id)
+
+    @classmethod
+    def get_all(cls):
+        return cls._instances.values()
